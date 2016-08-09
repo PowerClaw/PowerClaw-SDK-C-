@@ -292,7 +292,7 @@ public class pv1 //: MonoBehaviour
 
     /**
      * Standalone
-     */
+     *
     public static void Main()
     {
         pv1 SDK = new pv1();
@@ -308,10 +308,6 @@ public class pv1 //: MonoBehaviour
                 break;
             SDK.sensationSend("zero,thumb,0,vibration,100", 0);
             message = Console.ReadLine();
-            /*for(int i=0; i<=100; i++) {
-                SDK.sensationSend("left,hand,0,vibration," + i, 500);
-                Thread.Sleep(1000);
-            }*/
             message = Console.ReadLine();
             SDK.sensationSend("right,ring,0,heat,100", 500000);
             message = Console.ReadLine();
@@ -411,11 +407,11 @@ public class pv1 //: MonoBehaviour
             Console.WriteLine(SDK.sensationSend("left,thumb,0,cold,100", 2000));
             message = Console.ReadLine();
             if (stringComparer.Equals("quit", message))
-                break;*/
+                break;
         }
         SDK.serialPortClose();
         return;
-    }
+    }*/
 
     /**
      * Read the result of sending data to PowerClaw
